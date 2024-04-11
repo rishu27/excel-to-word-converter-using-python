@@ -17,3 +17,10 @@ This Python application generates a report in Microsoft Word format based on the
 - Install the required Python packages by running the following command:
   ```bash
   pip install openpyxl python-docx
+Running the Application:
+Place the Excel spreadsheet named data.xlsx in the project directory.
+Execute the Python script generate_report.py by running the following command:
+
+python generate_report.py
+
+After execution, the generated report will be saved as report.docx in the project directory.
