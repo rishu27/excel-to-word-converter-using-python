@@ -1,4 +1,4 @@
-#Report Generation Application#
+<h2> Report Generation Application </h2>
 This Python application generates a report in Microsoft Word format based on the information provided in an Excel spreadsheet. The report includes the longest, middle, and shortest paragraphs from the spreadsheet, along with appropriate headings and an image of a python at the bottom.
 
 Instructions
