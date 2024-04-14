@@ -19,17 +19,7 @@ def find_longest_shortest_middle(paragraphs):
     middle = paragraphs[middle_index]
     return longest, shortest, middle
 
-def underline_words_with_r(paragraph):
-    for run in paragraph.runs:
-        for word in run.text.split():
-            if word.endswith('r'):
-                # Create a new run with underline formatting
-                new_run = paragraph.add_run(word)
-                new_run.font.underline = True
 
-def underline_words_in_document(document):
-    for paragraph in document.paragraphs:
-        underline_words_with_r(paragraph)
 
 def create_report(paragraphs, titles, longest, shortest, middle):
     document = Document()
@@ -56,9 +46,6 @@ def main():
     paragraphs, titles = get_paragraphs(workbook)
     longest, shortest, middle = find_longest_shortest_middle(paragraphs.copy())  
     document = create_report(paragraphs, titles, longest, shortest, middle)
-    
-    # Underline words ending with 'r' in the entire document
-    underline_words_in_document(document)
     
     document.save("report.docx")
 
